@@ -13,8 +13,7 @@
 import FeatureSection from "../components/FeatureSection.vue";
 import HeroSection from "../components/HeroSection.vue";
 import AboutSection from "../components/AboutSection.vue";
-import ProductSection from "./components/ProductSection.vue";
-import ClientSection from "../components/ClientSection.vue";
+import ProductSection from "../components/ProductSection.vue";
 
 export default {
   name: "HomeView",
@@ -23,7 +22,6 @@ export default {
     FeatureSection,
     AboutSection,
     ProductSection,
-    ClientSection,
   },
 };
 </script>

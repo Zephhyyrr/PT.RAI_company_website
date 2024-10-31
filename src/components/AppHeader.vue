@@ -1,56 +1,58 @@
 <!-- src/components/Header.vue -->
 <template>
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
+    <div
+      class="container-fluid container-xl position-relative d-flex align-items-center"
+    >
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/logo.png" alt="">
+        <img src="assets/img/logo.png" alt="" />
         <h1 class="sitename">QuickStart</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero" class="active">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#features">Product</a></li>
-          <li><a href="index.html#services">Contact</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><router-link to="/#hero" class="active">Home</router-link></li>
+          <li><router-link to="/#about">About</router-link></li>
+          <li><router-link to="/#features">Product</router-link></li>
+          <li><router-link to="/#services">Contact</router-link></li>
+          <li class="dropdown">
+            <router-link to=""
+              ><span>Products</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i
+            ></router-link>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                    class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
+              <li v-for="value in products" :key="value.id">
+                <router-link :to="{ path: '/product/' + value.id }">
+                  {{ value.title }}
+                </router-link>
               </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
 </template>
 
 <script>
-  import AOS from "aos"; // Import AOS library
-  import "aos/dist/aos.css";
-  export default {
-    name: 'AppHeader',
-    mounted() {
-      AOS.init(); // Initialize AOS when the component is mounted
-    },
-  };
+import products from "../data/products.json";
+import AOS from "aos"; // Import AOS library
+import "aos/dist/aos.css";
+
+export default {
+  name: "AppHeader",
+  data() {
+    return {
+      products,
+    };
+  },
+  mounted() {
+    AOS.init(); // Initialize AOS when the component is mounted
+  },
+};
 </script>
 
 <style scoped>
-  /* Gaya khusus untuk Header */
+/* Gaya khusus untuk Header */
 </style>

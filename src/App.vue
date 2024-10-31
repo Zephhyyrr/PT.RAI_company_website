@@ -4,7 +4,8 @@
     <HeroSection />
     <FeatureSection />
     <AboutSection />
-    <ClientSection />
+    <ProductSection />
+    <ContactSection />
   </main>
 </template>
 
@@ -13,7 +14,8 @@ import AppHeader from "./components/AppHeader.vue";
 import FeatureSection from "./components/FeatureSection.vue"; // Perbaikan nama file
 import HeroSection from "./components/HeroSection.vue";
 import AboutSection from "./components/AboutSection.vue";
-import ClientSection from './components/ClientSection.vue';
+import ProductSection from "./components/ProductSection.vue"
+import ContactSection from "./components/ContactSection.vue"
 
 export default {
   name: "App",
@@ -22,7 +24,8 @@ export default {
     HeroSection,
     FeatureSection,
     AboutSection,
-    ClientSection,
+    ProductSection,
+    ContactSection,
   },
 };
 </script>

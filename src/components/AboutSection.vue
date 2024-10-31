@@ -27,7 +27,6 @@
                                 storacalaperda mastiro dolore eu fugiat nulla pariatur.</span>
                         </li>
                     </ul>
-                    <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                 </div>
 
                 <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">

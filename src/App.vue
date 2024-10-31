@@ -1,26 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <AppHeader />
+  <main class="main">
+    <HeroSection />
+    <FeatureSection />
+    <AboutSection />
+    <ClientSection />
+  </main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from "./components/AppHeader.vue";
+import FeatureSection from "./components/FeatureSection.vue"; // Perbaikan nama file
+import HeroSection from "./components/HeroSection.vue";
+import AboutSection from "./components/AboutSection.vue";
+import ClientSection from './components/ClientSection.vue';
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    AppHeader,
+    HeroSection,
+    FeatureSection,
+    AboutSection,
+    ClientSection,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+/* Kode CSS di sini jika diperlukan */
 </style>

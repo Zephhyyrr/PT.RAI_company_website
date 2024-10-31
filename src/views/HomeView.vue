@@ -4,7 +4,8 @@
     <HeroSection />
     <FeatureSection />
     <AboutSection />
-    <ClientSection />
+    <ProductSection />
+    <ContactSection />
   </main>
 </template>
 
@@ -12,6 +13,7 @@
 import FeatureSection from "../components/FeatureSection.vue";
 import HeroSection from "../components/HeroSection.vue";
 import AboutSection from "../components/AboutSection.vue";
+import ProductSection from "./components/ProductSection.vue";
 import ClientSection from "../components/ClientSection.vue";
 
 export default {
@@ -20,6 +22,7 @@ export default {
     HeroSection,
     FeatureSection,
     AboutSection,
+    ProductSection,
     ClientSection,
   },
 };

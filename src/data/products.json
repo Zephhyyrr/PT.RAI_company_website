@@ -1,0 +1,30 @@
+[
+  {
+    "id": "kapulaga",
+    "title": "Kapulaga",
+    "intro": {
+      "Beraneka Varietas": "Terdapat kapulaga hijau dan hitam.",
+      "Asal Daerah": "Asli dari India dan negara tropis lainnya.",
+      "Penggunaan Tradisional": "Sering digunakan dalam masakan dan minuman."
+    },
+    "benefit": {
+      "Antioxidant": "Melawan radikal bebas dalam tubuh.",
+      "Menyegarkan Napas": "Membantu mengatasi bau mulut.",
+      "Menurunkan Stres": "Aromanya menenangkan pikiran dan jiwa."
+    }
+  },
+  {
+    "id": "kayu-manis",
+    "title": "Kayu Manis",
+    "intro": {
+      "Asal Usul": "Kayu manis berasal dari kulit pohon Cinnamomum.",
+      "Varietas": "Jenis yang umum adalah Cinnamomum verum dan Cinnamomum cassia.",
+      "Rasa dan Aroma": "Kayu manis memiliki rasa manis dan pedas yang khas."
+    },
+    "benefit": {
+      "Anti-Inflamasi": "Kayu manis mengandung senyawa antiinflamasi yang membantu meredakan peradangan.",
+      "Mendukung Metabolisme": "Konsumsi kayu manis dapat membantu meningkatkan metabolisme tubuh.",
+      "Menjaga Kesehatan Jantung": "Kayu manis bermanfaat untuk menjaga kesehatan jantung dan menurunkan kolesterol."
+    }
+  }
+]

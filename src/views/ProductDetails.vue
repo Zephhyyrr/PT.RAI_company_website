@@ -34,7 +34,7 @@ export default {
     };
   },
   created() {
-    this.loadProductEn();
+    this.loadProductCn();
   },
   watch: {
     "$route.params.id": "loadProduct",
@@ -46,7 +46,8 @@ export default {
     },
     loadProductCn() {
       const productId = this.$route.params.id;
-      this.product = products_cn.find((p) => p.id === productId);
+      this.product = products_cn.find((p) => p.id === productId);      
+      console.log("China Product:", this.product); 
     },
     loadProductId() {
       const productId = this.$route.params.id;

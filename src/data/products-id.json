@@ -1,6 +1,6 @@
 [
   {
-    "id": "kapulaga",
+    "id": "cardamom",
     "title": "Kapulaga",
     "intro": {
       "Beraneka Varietas": "Terdapat kapulaga hijau dan hitam.",
@@ -46,7 +46,7 @@
     "closing": "Kapulaga, simbol warisan kuliner Indonesia."
   },
   {
-    "id": "kayu_manis",
+    "id": "cinnamon",
     "title": "Kayu Manis",
     "intro": {
       "Asal Usul": "Kayu manis berasal dari kulit pohon Cinnamomum.",
@@ -85,7 +85,7 @@
     "closing": "Kayu manis adalah rempah aromatik yang kaya manfaat."
   },
   {
-    "id": "buah_pala",
+    "id": "nutmeg",
     "title": "Buah Pala",
     "intro": {
       "Asal Usul": "Buah pala berasal dari pulau Banda, Indonesia. Dikenal karena aromanya yang khas.",

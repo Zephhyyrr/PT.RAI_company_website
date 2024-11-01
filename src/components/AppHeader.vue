@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import products from "../data/products.json";
+import products from "../data/products-en.json";
 import AOS from "aos"; // Import AOS library
 import "aos/dist/aos.css";
 

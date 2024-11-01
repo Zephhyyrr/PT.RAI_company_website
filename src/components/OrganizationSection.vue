@@ -1,0 +1,110 @@
+<template>
+  <section id="organization" class="testimonials section light-background">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Organization</h2>
+      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div>
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper init-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" v-for="(testimonial, index) in testimonials" :key="index">
+            <div class="testimonial-item" :data-index="index">
+              <div class="stars">
+                <i class="bi bi-star-fill" v-for="star in 5" :key="star"></i>
+              </div>
+              <p>{{ testimonial.text }}</p>
+              <div class="profile mt-auto">
+                <img :src="testimonial.image" class="testimonial-img" alt="">
+                <h3>{{ testimonial.name }}</h3>
+                <h4>{{ testimonial.position }}</h4>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css';
+
+export default {
+  name: 'OrganizationSection',
+  data() {
+    return {
+      testimonials: [
+        {
+          index:"1",
+          text: "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.",
+          image: "assets/img/testimonials/testimonials-1.jpg",
+          name: "Saul Goodman",
+          position: "Ceo & Founder"
+        },
+        {
+          text: "Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.",
+          image: "assets/img/testimonials/testimonials-2.jpg",
+          name: "Sara Wilsson",
+          position: "Designer"
+        },
+        {
+          text: "Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.",
+          image: "assets/img/testimonials/testimonials-3.jpg",
+          name: "Jena Karlis",
+          position: "Store Owner"
+        },
+        {
+          text: "Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.",
+          image: "assets/img/testimonials/testimonials-4.jpg",
+          name: "Matt Brandon",
+          position: "Freelancer"
+        },
+        {
+          text: "Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.",
+          image: "assets/img/testimonials/testimonials-5.jpg",
+          name: "John Larson",
+          position: "Entrepreneur"
+        }
+      ]
+    }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      const swiperConfig = {
+        loop: true, // Set to true to enable looping
+        speed: 600,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false, // Continue autoplay after interaction
+        },
+        slidesPerView: 'auto',
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 1,
+          },
+        },
+      };
+
+      // Initialize Swiper after DOM has updated
+      new Swiper('.init-swiper', swiperConfig);
+    });
+  }
+}
+</script>
+
+<style>
+/* Add your styles here */
+</style>

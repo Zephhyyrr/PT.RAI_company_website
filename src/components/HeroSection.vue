@@ -1,6 +1,5 @@
 <template>
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
+    <section id="home" class="hero section">
         <div class="hero-bg">
             <img src="assets/img/rempah_background.jpg" alt="">
         </div>
@@ -24,13 +23,13 @@
 </template>
 
 <script>
-    import AOS from "aos"; // Import AOS library
-    import "aos/dist/aos.css"; // Import AOS CSS
+    import AOS from "aos";
+    import "aos/dist/aos.css";
 
     export default {
-        name: "HeroSection", // Name of the component
+        name: "HeroSection",
         mounted() {
-            AOS.init(); // Initialize AOS when the component is mounted
+            AOS.init();
         },
     };
 </script>

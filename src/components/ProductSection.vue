@@ -1,85 +1,61 @@
 <template>
-    <!-- Services Section -->
-    <section id="services" class="services section light-background">
-        <!-- Section Title -->
+    <section id="product" class="features section">
+
         <div class="container section-title" data-aos="fade-up">
-            <h2>Services</h2>
-            <p>
-                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-                consectetur velit
-            </p>
+            <h2>Features</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
         </div>
-        <!-- End Section Title -->
 
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-item item-cyan position-relative">
-                        <i class="bi bi-activity icon"></i>
-                        <div>
-                            <h3>Kapulaga</h3>
-                            <p>
-                                Kapulaga is...
-                            </p>
-                            <a href="#" class="read-more stretched-link">Learn More <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
+            <div class="row justify-content-between">
+                <div class="col-lg-5 d-flex align-items-center">
+                    <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+                        <li v-for="(product, index) in products" :key="product.id" class="nav-item">
+                            <a class="nav-link" style="background-color: white;" :class="{ 'active show': index === 0 }"
+                                data-bs-toggle="tab" :data-bs-target="`#features-tab-${index + 1}`">
+                                <div>
+                                    <h4>{{ product.title }}</h4>
+                                    <p>{{ product.description }}</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <!-- End Service Item -->
 
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-item item-orange position-relative">
-                        <i class="bi bi-broadcast icon"></i>
-                        <div>
-                            <h3>Nutmeg</h3>
-                            <p>
-                                Nutmeg is...
-                            </p>
-                            <a href="#" class="read-more stretched-link">Learn More <i
-                                    class="bi bi-arrow-right"></i></a>
+                <div class="col-lg-6">
+                    <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+                        <div v-for="(product, index) in products" :key="product.id" class="tab-pane fade"
+                            :class="{ 'active show': index === 0 }" :id="`features-tab-${index + 1}`">
+                            <img :src="product.image" :alt="product.title" class="img-fluid mt-3">
                         </div>
                     </div>
                 </div>
-                <!-- End Service Item -->
-
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-item item-teal position-relative">
-                        <i class="bi bi-easel icon"></i>
-                        <div>
-                            <h3>Cinnamon</h3>
-                            <p>
-                                Cinnamon is ...
-                            </p>
-                            <a href="#" class="read-more stretched-link">Learn More <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Service Item -->
-
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-item item-red position-relative">
-                        <i class="bi bi-bounding-box-circles icon"></i>
-                        <div>
-                            <h3>Cangkeh</h3>
-                            <p>
-                                Cangkeh is... 
-                            </p>
-                            <a href="#" class="read-more stretched-link">Learn More <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Service Item -->
             </div>
         </div>
-    </section>
-    <!-- /Services Section -->
+    </section><!-- /Features Section -->
 </template>
 
 <script>
+    import products from "@/data/products.json";
+
     export default {
         name: "ProductSection",
+        data() {
+            return {
+                products,
+            };
+        },
     };
 </script>
+
+<style scoped>
+    .services .service-item {
+        background-color: var(--surface-color);
+        border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+        height: 100%;
+        padding: 30px;
+        transition: 0.3s;
+        border-radius: 10px;
+        display: flex;
+    }
+</style>

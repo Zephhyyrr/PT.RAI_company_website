@@ -1,6 +1,6 @@
 <template>
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="about" class="about section light-background">
         <div class="container">
             <div class="row gy-4">
                 <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">

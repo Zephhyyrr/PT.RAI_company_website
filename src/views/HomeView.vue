@@ -1,27 +1,28 @@
 <!-- Ini yang tadinya di app -->
 <template>
   <main class="main">
-    <HeroSection />
-    <FeatureSection />
-    <AboutSection />
-    <ProductSection />
-    <ContactSection />
+    <HeroSection id="home"/>
+    <AboutSection id="about"/>
+    <ProductSection id="product" />
+    <OrganizationSection id="organization"/>
+    <ContactSection id="contact"/>
   </main>
 </template>
 
 <script>
-import FeatureSection from "../components/FeatureSection.vue";
 import HeroSection from "../components/HeroSection.vue";
 import AboutSection from "../components/AboutSection.vue";
 import ProductSection from "../components/ProductSection.vue";
-
+import ContactSection from "@/components/ContactSection.vue";
+import OrganizationSection from "@/components/OrganizationSection.vue";
 export default {
   name: "HomeView",
   components: {
     HeroSection,
-    FeatureSection,
     AboutSection,
     ProductSection,
+    OrganizationSection,
+    ContactSection,
   },
 };
 </script>

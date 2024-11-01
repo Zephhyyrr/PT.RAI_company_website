@@ -35,7 +35,7 @@ export default {
     this.loadProduct();
   },
   watch: {
-    "$route.params.id": "loadProduct", // Pantau perubahan pada ID di URL
+    "$route.params.id": "loadProduct",
   },
   methods: {
     loadProduct() {

@@ -2,6 +2,9 @@
   {
     "id": "kapulaga",
     "title": "Kapulaga",
+    "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has",
+    "icon" : "/assets/img/icons/ic_kapulaga.png",
+    "image" : "/assets/img/rempah_background.jpg",
     "intro": {
       "Beraneka Varietas": "Terdapat kapulaga hijau dan hitam.",
       "Asal Daerah": "Asli dari India dan negara tropis lainnya.",
@@ -16,6 +19,8 @@
   {
     "id": "kayu-manis",
     "title": "Kayu Manis",
+    "description" : "lorem15",
+    "image" : "/assets/img/rempah_background.jpg",
     "intro": {
       "Asal Usul": "Kayu manis berasal dari kulit pohon Cinnamomum.",
       "Varietas": "Jenis yang umum adalah Cinnamomum verum dan Cinnamomum cassia.",

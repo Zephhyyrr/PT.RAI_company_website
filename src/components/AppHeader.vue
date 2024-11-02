@@ -70,7 +70,7 @@
 </template>
 
 <script>
-import products from "../data/products.json";
+import products from "../data/products-en.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -100,7 +100,13 @@ export default {
       });
     },
     handleScroll() {
-      const sections = ["home", "about", "product","organization", "contact"];
+      const sections = ["home", "about", "product", "organization", "contact"];
+
+      if (window.scrollY === 0) {
+        this.activeSection = "home";
+        return;
+      }
+
       sections.forEach((section) => {
         const element = document.getElementById(section);
         if (element) {
@@ -110,7 +116,12 @@ export default {
           }
         }
       });
+      // biar menu nya ilang kalau dipencet
+      if (document.body.classList.contains("mobile-nav-active")) {
+        this.toggleMobileMenu();
+      }
     },
+
     isActive(section) {
       return this.activeSection === section;
     },
@@ -118,8 +129,12 @@ export default {
       this.activeSection = section;
     },
     toggleMobileMenu() {
-      const navMenu = document.getElementById("navmenu");
-      navMenu.classList.toggle("active");
+      // ini copas yg di Appmain.js baris 30, trs yg disana ku comment
+      document.body.classList.toggle("mobile-nav-active");
+
+      const mobileNavToggleBtn = document.querySelector(".mobile-nav-toggle");
+      mobileNavToggleBtn.classList.toggle("bi-list");
+      mobileNavToggleBtn.classList.toggle("bi-x");
     },
   },
 };

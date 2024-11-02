@@ -3,7 +3,7 @@
 
     <section id="home" class="hero section">
       <div class="hero-bg">
-        <img src="/assets/img/rempah_background.jpg" alt="">
+        <img :src="product.images[0]" alt="">
       </div>
       <div class="container text-center">
         <div class="d-flex flex-column justify-content-center align-items-center">
@@ -28,7 +28,7 @@
         <div class="row gy-4 justify-content-between features-item">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/features-1.jpg" class="img-fluid" alt="">
+            <img :src="product.images[1]" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
@@ -36,7 +36,7 @@
               <h3>Introducing {{ product.title }}</h3>
               <ul>
                 <li v-for="(value, key) in product.intro" :key="key">
-                  <strong>{{ key }} : </strong>&nbsp; {{ value }}
+                  <strong>{{ key }} : </strong> {{ value }}
                 </li>
               </ul>
             </div>
@@ -52,14 +52,14 @@
               <h3>Benefit : {{ product.title }}</h3>
               <ul>
                 <li v-for="(value, key) in product.benefit" :key="key">
-                  <strong>{{ key }} : </strong>&nbsp;{{ value }}
+                  <strong>{{ key }} : </strong>{{ value }}
                 </li>
               </ul>
             </div>
           </div>
 
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/features-2.jpg" class="img-fluid" alt="">
+            <img :src="product.images[0]" class="img-fluid" alt=""/>
           </div>
 
         </div><!-- Features Item -->

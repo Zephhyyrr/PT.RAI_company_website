@@ -34,7 +34,7 @@
                                         
                                         <!-- Check if media is an image -->
                                         <template v-if="media.type === 'image'">
-                                            <img :src="media.src" :alt="product.title" class="d-block w-100">
+                                            <img :src="product.images[0]" :alt="product.title" class="d-block w-100">
                                         </template>
                                         
                                         <!-- Check if media is a video -->
@@ -66,7 +66,7 @@
 </template>
 
 <script>
-import products from "@/data/products-en.json";
+import products from "../data/products-en.json";
 
 export default {
     name: "ProductSection",

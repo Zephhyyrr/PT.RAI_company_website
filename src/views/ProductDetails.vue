@@ -34,7 +34,7 @@ export default {
     };
   },
   created() {
-    this.loadProductCn();
+    this.loadProductEn();
   },
   watch: {
     "$route.params.id": "loadProduct",

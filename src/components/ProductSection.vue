@@ -2,7 +2,7 @@
     <section id="product" class="features section">
 
         <div class="container section-title" data-aos="fade-up">
-            <h2>Features</h2>
+            <h2>Product</h2>
             <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
         </div>
 

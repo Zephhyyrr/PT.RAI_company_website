@@ -6,7 +6,7 @@
         <div class="container text-center">
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <h1 data-aos="fade-up">Welcome to <span>Rumpun Alam Indonesia</span></h1>
-                <p data-aos="fade-up" data-aos-delay="100">Spice exporting company from Indonesia<br></p>
+                <p data-aos="fade-up" data-aos-delay="100">Perusahaan Exportir Rempah-Rempah dari Indonesia<br></p>
                 <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
                     <!-- <a href="#about" class="btn-get-started">Get Started</a> -->
                     <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"

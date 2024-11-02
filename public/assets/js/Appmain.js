@@ -40,6 +40,7 @@
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
     navmenu.addEventListener('click', () => {
       if (document.querySelector('.mobile-nav-active')) {
+        // eslint-disable-next-line no-undef
         mobileNavToogle();
       }
     });

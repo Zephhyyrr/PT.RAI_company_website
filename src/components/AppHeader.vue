@@ -110,6 +110,10 @@ export default {
           }
         }
       });
+      // biar menu nya ilang kalau dipencet
+      if (document.body.classList.contains("mobile-nav-active")) {
+        this.toggleMobileMenu();
+      }
     },
     isActive(section) {
       return this.activeSection === section;
@@ -118,8 +122,12 @@ export default {
       this.activeSection = section;
     },
     toggleMobileMenu() {
-      const navMenu = document.getElementById("navmenu");
-      navMenu.classList.toggle("active");
+      // ini copas yg di Appmain.js baris 30, trs yg disana ku comment
+      document.body.classList.toggle("mobile-nav-active");
+
+      const mobileNavToggleBtn = document.querySelector(".mobile-nav-toggle");
+      mobileNavToggleBtn.classList.toggle("bi-list");
+      mobileNavToggleBtn.classList.toggle("bi-x");
     },
   },
 };

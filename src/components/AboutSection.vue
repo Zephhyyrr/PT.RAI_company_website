@@ -7,28 +7,27 @@
                     <p class="who-we-are">Who We Are</p>
                     <h3>Rumpun Alam Indonesia</h3>
                     <p class="fst">
-                        PT. Rumpun Alam Indonesia adalah merupakan salah satu usaha yang berawal berdiri sejak tahun 2021 di awali pada bidang pembuatan, pengolahan (produksi) rempah - rempah lokal yang mendominasi hasil panen alam sumatera barat indonesia yang di pantau dan di awasi  langsung oleh dinas perdagangan dan pertanian  provinsi sumatera barat untuk uji kelayakan dan ketahanan pangan. 
-Exsistensi pengolahan tersebut mulai berkembang di tahun 2022. Dimana tempat ini merupakan satu kesatuan dari mulai proses penanaman hingga pengolahan hasil panen yang keseluruhan bersifat manual sehingga memerlukan tenaga kerja yang relatif banyak meski tidak semua tenaga kerja mengerjakan penyortiran di tempat produksi. dengan banyaknya permintaan pasar serta banyaknya minat dan permintaan expor impor dari berbagai negara perihal tersebut di 2023 kami resmi menridikan PT atau perusahaan yang terdaftar dan berbadan hukum denhgan legalitas resmi kebangsaan indonesia. 
+                        PT. Rumpun Alam Indonesia is a business that was founded in 2021 starting in the field of manufacturing, processing (production) of local spices that dominate the results of the natural harvest of West Sumatra, Indonesia, which is monitored and supervised  directly by the provincial trade and agriculture office of West Sumatra West Sumatra for feasibility testing and food security. Existence The processing began to develop in 2022. Where is the place this place is a unity from the start of the planting process to processing of the entire harvest is manual so that requires a relatively large number of workers even though not all workers do sorting at the production site. labor does the sorting at the production site. with a lot of market demand and a lot of interest and demand for export imports. market demand as well as the many interests and requests for export and import from various countries regarding this matter in 2023 we officially investigated PT or a company that is registered and incorporated with the the official legality of the Indonesian nationality. 
                     </p>
                     <ul>
                         <p class="fst fs-6 fw-bold">
-                            Misi dan tujuan PT Rumpun Alam Indonesia :
+                            PT Rumpun Alam Indonesia mission and objectives :
                         </p>
                         <li>
                             <i class="bi bi-check-circle"></i>
-                            <span>Memperkenalkan kekayaan alam Sumatera Barat – indonesia kepada masyarakat luas baik lokal maupun manca negara</span>
+                            <span>Introducing the natural wealth of West Sumatra - Indonesia to the wider community both locally and internationally</span>
                         </li>
                         <li>
                             <i class="bi bi-check-circle"></i>
-                            <span>Melestarikan warisan dan budaya indonesia sebagai penghasil rempah rempah yang sudah di kenal secara internasional  </span>
+                            <span>Preserving Indonesia's heritage and culture as an internationally recognized spice producer </span>
                         </li>
                         <li>
                             <i class="bi bi-check-circle"></i>
-                            <span>Membantu menambah devisa negara</span>
+                            <span>Helps add to the country's foreign exchange</span>
                         </li>
                         <li>
                             <i class="bi bi-check-circle"></i>
-                            <span>Berusaha mengangkat harkat dan martabat serta kesejahtraan lingkungan sekitarnya</span>
+                            <span>Striving to uplift the dignity and well-being of the surrounding environment</span>
                         </li>
                     </ul>
                 </div>

@@ -105,7 +105,7 @@
       };
     },
     created() {
-      this.loadProductId();
+      this.loadProductEn();
     },
     watch: {
       "$route.params.id": "loadProduct",

@@ -8,17 +8,17 @@
     <div class="container" data-aos="fade-up" data-aos-delay="100">
       <div class="swiper init-swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" v-for="(testimonial, index) in testimonials" :key="index">
+          <div class="swiper-slide" v-for="(organization, index) in organizations" :key="index">
             <div class="testimonial-item" :data-index="index">
               <div class="stars">
-                <i class="bi bi-star-fill" v-for="star in 5" :key="star"></i>
+                <!-- <i class="bi bi-star-fill" v-for="star in 5" :key="star"></i> -->
               </div>
-              <p>{{ testimonial.text }}</p>
               <div class="profile mt-auto">
-                <img :src="testimonial.image" class="testimonial-img" alt="">
-                <h3>{{ testimonial.name }}</h3>
-                <h4>{{ testimonial.position }}</h4>
+                <img :src="organization.image" class="testimonial-img" alt="">
+                <h3>{{ organization.name }}</h3>
+                <h4>{{ organization.position }}</h4>
               </div>
+              <p>{{ organization.text }}</p>
             </div>
           </div><!-- End testimonial item -->
         </div>
@@ -36,7 +36,7 @@ export default {
   name: 'OrganizationSection',
   data() {
     return {
-      testimonials: [
+      organizations: [
         {
           index:"1",
           text: "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.",

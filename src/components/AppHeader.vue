@@ -4,15 +4,15 @@
       class="container-fluid container-xl position-relative d-flex align-items-center"
     >
       <router-link to="/" class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/logo.png" alt="QuickStart Logo" />
-        <h1 class="sitename">QuickStart</h1>
+        <!-- <img src="assets/img/logo.png" alt="QuickStart Logo" /> -->
+        <h1 class="sitename">Rumpun Alam Indonesia</h1>
       </router-link>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li>
             <router-link
-              to="#"
+              to="/"
               :class="{ active: isActive('home') }"
               @click.prevent="scrollTo('home')"
               >Home</router-link

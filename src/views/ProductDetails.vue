@@ -33,7 +33,7 @@
             data-aos="fade-up"
             :data-aos-delay="index * 100 + 100"
           >
-            <div class="content">
+            <div :class="['content', index % 2 === 0 ? '' : 'white-container']">
               <h3>{{ formatTitle(key) }}</h3>
               <!-- Kondisi jika hanya satu item, tampilkan langsung -->
               <p v-if="typeof featureData === 'string'">{{ featureData }}</p>
@@ -128,5 +128,8 @@ export default {
   .img-feature{
     width: 100%;
     height: auto;
+  }
+  .white-container{
+    background-color: #ffffff !important;
   }
 </style>

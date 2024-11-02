@@ -100,7 +100,13 @@ export default {
       });
     },
     handleScroll() {
-      const sections = ["home", "about", "product","organization", "contact"];
+      const sections = ["home", "about", "product", "organization", "contact"];
+
+      if (window.scrollY === 0) {
+        this.activeSection = "home";
+        return;
+      }
+
       sections.forEach((section) => {
         const element = document.getElementById(section);
         if (element) {
@@ -111,6 +117,7 @@ export default {
         }
       });
     },
+
     isActive(section) {
       return this.activeSection === section;
     },

@@ -36,7 +36,7 @@
 </template>
 
 <script>
-    import products from "@/data/products.json";
+    import products from "@/data/products-en.json";
 
     export default {
         name: "ProductSection",

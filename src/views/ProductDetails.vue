@@ -21,7 +21,9 @@
 </template>
 
 <script>
-import allProducts from "../data/products.json";
+import products_en from "../data/products-en.json";
+import products_cn from "../data/products-cn.json";
+import products_id from "../data/products-id.json";
 import HeroSection from "@/components/HeroSection.vue";
 
 export default {
@@ -32,15 +34,24 @@ export default {
     };
   },
   created() {
-    this.loadProduct();
+    this.loadProductCn();
   },
   watch: {
     "$route.params.id": "loadProduct",
   },
   methods: {
-    loadProduct() {
+    loadProductEn() {
       const productId = this.$route.params.id;
-      this.product = allProducts.find((p) => p.id === productId);
+      this.product = products_en.find((p) => p.id === productId);
+    },
+    loadProductCn() {
+      const productId = this.$route.params.id;
+      this.product = products_cn.find((p) => p.id === productId);      
+      console.log("China Product:", this.product); 
+    },
+    loadProductId() {
+      const productId = this.$route.params.id;
+      this.product = products_id.find((p) => p.id === productId);
     },
   },
   components: {

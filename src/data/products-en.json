@@ -7,6 +7,7 @@
       "/assets/img/dummy/kapulaga/kapulaga2.jpeg",
       "/assets/img/dummy/kapulaga/kapulaga3.jpeg"
     ],
+    "video": ["/assets/img/dummy/kapulaga/kapulagavideo.mp4"],
     "intro": {
       "Varieties": "There are green and black cardamom.",
       "Origin": "Native to India and other tropical countries.",
@@ -53,12 +54,12 @@
   {
     "id": "cinnamon",
     "title": "Cinnamon",
+    "description": "Cinnamon bark is a kind of spice obtained from the inner bark of several species of trees of the genus Cinnamomum used for sweet and savory dishes. ",
     "images": [
       "/assets/img/dummy/kayumanis/kayumanis1.jpg",
       "/assets/img/dummy/kayumanis/kayumanis2.webp",
       "/assets/img/dummy/kayumanis/kayumanis3.webp"
     ],
-
     "intro": {
       "Origin": "Cinnamon comes from the bark of Cinnamomum trees.",
       "Varieties": "Common types are Cinnamomum verum and Cinnamomum cassia.",
@@ -98,6 +99,7 @@
   {
     "id": "nutmeg",
     "title": "Nutmeg",
+    "description": "Nutmeg has anti-inflammatory and antispasmodic properties that can help relieve digestive disorders such as flatulence, gas and diarrhea. Nutmeg extract has been used in traditional medicine to relieve indigestion for centuries.",
     "images": [
       "/assets/img/dummy/buahpala/buahpala1.jpg",
       "/assets/img/dummy/buahpala/buahpala2.jpg",

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
     "core-js": "^3.8.3",
     "glightbox": "^3.3.0",
     "swiper": "^11.1.14",

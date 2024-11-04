@@ -1,7 +1,7 @@
 <template>
   <main class="main">
 
-    <section id="home" class="hero section">
+    <section id="product" class="hero section">
       <div class="hero-bg">
         <img :src="product.images[0]" alt="">
       </div>
@@ -35,9 +35,7 @@
           >
             <div :class="['content', index % 2 === 0 ? '' : 'white-container']">
               <h3>{{ formatTitle(key) }}</h3>
-              <!-- Kondisi jika hanya satu item, tampilkan langsung -->
               <p v-if="typeof featureData === 'string'">{{ featureData }}</p>
-              <!-- Jika lebih dari satu item, tampilkan dalam list -->
               <ul v-else>
                 <li v-for="(value, subKey) in featureData" :key="subKey">
                   <strong>{{ formatTitle(subKey) }}:</strong> {{ value }}
@@ -87,7 +85,7 @@ export default {
     featureSections() {
       // Filter featureSections agar hanya mencakup data tanpa title dan closing
       return Object.keys(this.product).reduce((sections, key) => {
-        if (key !== 'id' && key !== 'images' && key !== 'title' && key !== 'closing') {
+        if (key !== 'id' && key !== 'images' && key !== 'title' && key !== 'closing' && key != 'video') {
           sections[key] = this.product[key];
         }
         return sections;

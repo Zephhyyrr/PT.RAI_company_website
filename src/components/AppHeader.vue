@@ -8,7 +8,7 @@
         <h1 class="sitename">Rumpun Alam Indonesia</h1>
       </router-link>
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu fs-5">
         <ul>
           <li>
             <router-link
@@ -85,19 +85,40 @@ export default {
   mounted() {
     AOS.init();
     window.addEventListener("scroll", this.handleScroll);
+
+    this.setActiveSectionOnRoute();
   },
   beforeUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
   },
+  watch: {
+    $route() {
+      this.setActiveSectionOnRoute();
+    },
+  },
   methods: {
     scrollTo(sectionId) {
-      this.setActive(sectionId);
-      this.$nextTick(() => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      });
+      if (this.$route.path.includes("/product/")) {
+        // Redirect to home page and scroll after navigation
+        this.$router.push("/").then(() => {
+          this.setActive(sectionId);
+          this.$nextTick(() => {
+            const element = document.getElementById(sectionId);
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          });
+        });
+      } else {
+        // Just scroll on the current page
+        this.setActive(sectionId);
+        this.$nextTick(() => {
+          const element = document.getElementById(sectionId);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      }
     },
     handleScroll() {
       const sections = ["home", "about", "product", "organization", "contact"];
@@ -116,20 +137,24 @@ export default {
           }
         }
       });
-      // biar menu nya ilang kalau dipencet
+      // Close mobile menu on scroll
       if (document.body.classList.contains("mobile-nav-active")) {
         this.toggleMobileMenu();
       }
     },
-
     isActive(section) {
       return this.activeSection === section;
     },
     setActive(section) {
       this.activeSection = section;
     },
+    setActiveSectionOnRoute() {
+      // Set 'product' as activeSection if route path matches a product detail page
+      if (this.$route.path.includes("/product/")) {
+        this.activeSection = "product";
+      }
+    },
     toggleMobileMenu() {
-      // ini copas yg di Appmain.js baris 30, trs yg disana ku comment
       document.body.classList.toggle("mobile-nav-active");
 
       const mobileNavToggleBtn = document.querySelector(".mobile-nav-toggle");
@@ -140,6 +165,6 @@ export default {
 };
 </script>
 
+
 <style scoped>
-/* Custom styles for Header */
 </style>

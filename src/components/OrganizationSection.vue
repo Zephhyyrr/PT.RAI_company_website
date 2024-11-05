@@ -51,12 +51,6 @@ export default {
           position: "Managing Director"
         },
         {
-          // text: "Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.",
-          image: "assets/img/testimonials/testimonials-3.jpg",
-          name: "Jena Karlis",
-          position: "Store Owner"
-        },
-        {
           // text: "Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.",
           image: "assets/img/testimonials/testimonials-4.jpg",
           name: "Mufrizal Piliang",

@@ -13,7 +13,7 @@
               <div class="stars">
                 <!-- <i class="bi bi-star-fill" v-for="star in 5" :key="star"></i> -->
               </div>
-              <div class="profile mt-auto">
+              <div class="profile pb-2">
                 <img :src="organization.image" class="testimonial-img" alt="">
                 <h3>{{ organization.name }}</h3>
                 <h4>{{ organization.position }}</h4>

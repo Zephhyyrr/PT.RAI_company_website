@@ -8,6 +8,65 @@
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
       <div class="row gy-4">
+        <div class="col-lg-4 col-md-6">
+          <a
+            href="https://maps.app.goo.gl/3H5LWyxHy4ywKMm8A"
+            target="_blank"
+            style="text-decoration: none; color: inherit"
+          >
+            <div
+              class="info-item d-flex flex-column justify-content-center align-items-center"
+              data-aos="fade-up"
+              data-aos-delay="600"
+              style="height: 100%; cursor: pointer"
+            >
+              <i class="bi bi-geo-alt"></i>
+              <h3>Address</h3>
+              <p style="text-align: center;">Jl. Raya Nanggalo Nomer 28 A, Kp. Olo, Nanggalo District, Padang City, West Sumatera, 25173 - Indonesia </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div
+            class="info-item d-flex flex-column justify-content-center align-items-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            style="height: 100%"
+          >
+            <i class="bi bi-whatsapp"></i>
+            <h3>Chat on WhatsApp</h3>
+            <p>
+              <a href="https://wa.me/6282374635328" target="_blank"
+                >+6282374635328 (Alno Ramalino)</a
+              >
+            </p>
+            <p>
+              <a href="https://wa.me/6281275341600" target="_blank"
+                >+6281275341600 (Anjas)</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <a
+            href="https://www.instagram.com/pt.rumpunalamindonesia/?utm_source=ig_web_button_share_sheet"
+            target="_blank"
+            style="text-decoration: none; color: inherit"
+          >
+            <div
+              class="info-item d-flex flex-column justify-content-center align-items-center"
+              data-aos="fade-up"
+              data-aos-delay="600"
+              style="height: 100%; cursor: pointer"
+            >
+              <i class="bi bi-instagram"></i>
+              <h3>Follow Our Instagram</h3>
+              <p>pt.rumpunalamindonesia</p>
+            </div>
+          </a>
+        </div>
       </div>
 
       <div class="row gy-4 mt-1">
@@ -91,8 +150,8 @@ export default {
       message: "",
       honeypot: "",
       lastSubmit: null,
-      hcaptchaSiteKey: "81be2c46-9600-47d2-b334-d8268a36d8c8", 
-      hcaptchaLoaded: false, 
+      hcaptchaSiteKey: "81be2c46-9600-47d2-b334-d8268a36d8c8",
+      hcaptchaLoaded: false,
     };
   },
   mounted() {

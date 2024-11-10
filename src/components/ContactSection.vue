@@ -1,5 +1,6 @@
 <template>
   <section id="contact" class="contact section light-background">
+    <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <h2>Contact</h2>
       <p>Contact us here</p>
@@ -7,60 +8,6 @@
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
       <div class="row gy-4">
-        <div class="col-lg-6">
-          <div
-            class="info-item d-flex flex-column justify-content-center align-items-center"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <i class="bi bi-geo-alt"></i>
-            <h3>Address</h3>
-            <p class="text-justify">
-              Jl. Raya Nanggalo No. 28 A, Kp. Olo, Nanggalo District, Padang
-              City, West Sumatera, 25173 - Indonesia
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div
-            class="info-item d-flex flex-column justify-content-center align-items-center"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <i class="bi bi-whatsapp"></i>
-            <h3>Chat on WhatsApp</h3>
-            <p>
-              <a href="https://wa.me/6282374635328" target="_blank"
-                >+6282374635328 (Alno Ramalino)</a
-              >
-            </p>
-            <p>
-              <a href="https://wa.me/6281275341600" target="_blank"
-                >+62628125341600 (Anjas)</a
-              >
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <a
-            href="https://www.instagram.com/pt.rumpunalamindonesia/?utm_source=ig_web_button_share_sheet"
-            target="_blank"
-            style="text-decoration: none; color: inherit"
-          >
-            <div
-              class="info-item d-flex flex-column justify-content-center align-items-center"
-              data-aos="fade-up"
-              data-aos-delay="600"
-              style="cursor: pointer"
-            >
-              <i class="bi bi-instagram"></i>
-              <h3>Follow Our Instagram</h3>
-              <p>pt.rumpunalamindonesia</p>
-            </div>
-          </a>
-        </div>
       </div>
 
       <div class="row gy-4 mt-1">
@@ -83,7 +30,7 @@
             data-aos-delay="400"
           >
             <div class="row gy-4">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <input
                   type="text"
                   v-model="name"
@@ -115,15 +62,11 @@
 
               <!-- hCaptcha Widget -->
               <div class="col-md-12">
-                <h-captcha
-                  :sitekey="siteKey"
-                  v-model="hCaptchaResponse"
-                  @verify="onVerify"
-                ></h-captcha>
+                <div class="h-captcha" :data-sitekey="hcaptchaSiteKey"></div>
               </div>
 
-              <!-- Honeypot field for bots -->
-              <div style="display:none;">
+              <!-- Honeypot for bot detection -->
+              <div style="display: none">
                 <input type="text" v-model="honeypot" name="honeypot" />
               </div>
 
@@ -139,13 +82,8 @@
 </template>
 
 <script>
-import hCaptcha from "vue-hcaptcha"; // Correct import
-
 export default {
   name: "ContactSection",
-  components: {
-    hCaptcha, // Use hCaptcha in template
-  },
   data() {
     return {
       name: "",
@@ -153,27 +91,46 @@ export default {
       message: "",
       honeypot: "",
       lastSubmit: null,
-      siteKey: "81be2c46-9600-47d2-b334-d8268a36d8c8", // Replace with your hCaptcha site key
-      hCaptchaResponse: "", // Add a variable to store hCaptcha response
+      hcaptchaSiteKey: "81be2c46-9600-47d2-b334-d8268a36d8c8", 
+      hcaptchaLoaded: false, 
     };
   },
+  mounted() {
+    this.loadHcaptcha();
+  },
   methods: {
-    onVerify(response) {
-      console.log("hCaptcha Response: ", response);
-      if (!response) {
+    loadHcaptcha() {
+      const script = document.createElement("script");
+      script.src = "https://hcaptcha.com/1/api.js";
+      script.async = true;
+      script.defer = true;
+      script.onload = () => {
+        this.hcaptchaLoaded = true;
+        console.log("hCaptcha script loaded.");
+      };
+      script.onerror = () => {
+        console.error("Failed to load hCaptcha script.");
+      };
+      document.head.appendChild(script);
+    },
+    sendEmail() {
+      if (!this.hcaptchaLoaded) {
+        console.error("hCaptcha script not loaded.");
+        alert("hCaptcha script not loaded. Please try again.");
+        return;
+      }
+
+      const hcaptchaResponse = window.hcaptcha.getResponse();
+      if (!hcaptchaResponse) {
         alert("Please complete the CAPTCHA.");
         return;
       }
-      // Send the response to the backend for verification
-    },
-    sendEmail() {
-      // Prevent submission if honeypot is filled (bot detection)
+
       if (this.honeypot) {
         console.log("Bot detected!");
         return;
       }
 
-      // Rate-limiting mechanism (e.g., 30 seconds delay)
       const now = new Date().getTime();
       if (this.lastSubmit && now - this.lastSubmit < 30000) {
         alert("You are submitting too quickly. Please wait a moment.");
@@ -181,6 +138,17 @@ export default {
       }
 
       this.lastSubmit = now;
+
+      const spamKeywords = ["free", "offer", "buy now"];
+      if (
+        this.subject &&
+        spamKeywords.some((keyword) =>
+          this.subject.toLowerCase().includes(keyword)
+        )
+      ) {
+        alert("The subject contains spammy content. Please modify it.");
+        return;
+      }
 
       const emailSubject = encodeURIComponent(this.subject);
       const emailBody = encodeURIComponent(
@@ -194,7 +162,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-/* Add your styling here */
-</style>

@@ -1,13 +1,9 @@
 <template>
   <section id="contact" class="contact section light-background">
-    <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <h2>Contact</h2>
-      <p>
-        Contact us here
-      </p>
+      <p>Contact us here</p>
     </div>
-    <!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
       <div class="row gy-4">
@@ -19,7 +15,10 @@
           >
             <i class="bi bi-geo-alt"></i>
             <h3>Address</h3>
-            <p class="text-justify">Jl. Raya Nanggalo No. 28 A, Kp. Olo, Nanggalo District, Padang City, West Sumatera, 25173 - Indonesia </p>
+            <p class="text-justify">
+              Jl. Raya Nanggalo No. 28 A, Kp. Olo, Nanggalo District, Padang
+              City, West Sumatera, 25173 - Indonesia
+            </p>
           </div>
         </div>
 
@@ -43,7 +42,6 @@
             </p>
           </div>
         </div>
-        <!-- End Info Item -->
 
         <div class="col-lg-3 col-md-6">
           <a
@@ -59,8 +57,7 @@
             >
               <i class="bi bi-instagram"></i>
               <h3>Follow Our Instagram</h3>
-              <p>
-                pt.rumpunalamindonesia</p>
+              <p>pt.rumpunalamindonesia</p>
             </div>
           </a>
         </div>
@@ -77,12 +74,10 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <!-- End Google Maps -->
 
         <div class="col-lg-6">
           <form
-            action="forms/contact.php"
-            method="post"
+            @submit.prevent="sendEmail"
             class="php-email-form"
             data-aos="fade-up"
             data-aos-delay="400"
@@ -91,63 +86,115 @@
               <div class="col-md-6">
                 <input
                   type="text"
-                  name="name"
+                  v-model="name"
                   class="form-control"
                   placeholder="Your Name"
-                  required=""
-                />
-              </div>
-
-              <div class="col-md-6">
-                <input
-                  type="email"
-                  class="form-control"
-                  name="email"
-                  placeholder="Your Email"
-                  required=""
+                  required
                 />
               </div>
 
               <div class="col-md-12">
                 <input
                   type="text"
+                  v-model="subject"
                   class="form-control"
-                  name="subject"
                   placeholder="Subject"
-                  required=""
+                  required
                 />
               </div>
 
               <div class="col-md-12">
                 <textarea
+                  v-model="message"
                   class="form-control"
-                  name="message"
                   rows="6"
                   placeholder="Message"
-                  required=""
+                  required
                 ></textarea>
               </div>
 
-              <div class="col-md-12 text-center">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  Your message has been sent. Thank you!
-                </div>
+              <!-- hCaptcha Widget -->
+              <div class="col-md-12">
+                <h-captcha
+                  :sitekey="siteKey"
+                  v-model="hCaptchaResponse"
+                  @verify="onVerify"
+                ></h-captcha>
+              </div>
 
+              <!-- Honeypot field for bots -->
+              <div style="display:none;">
+                <input type="text" v-model="honeypot" name="honeypot" />
+              </div>
+
+              <div class="col-md-12 text-center">
                 <button type="submit">Send Message</button>
               </div>
             </div>
           </form>
         </div>
-        <!-- End Contact Form -->
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import hCaptcha from "vue-hcaptcha"; // Correct import
+
 export default {
   name: "ContactSection",
+  components: {
+    hCaptcha, // Use hCaptcha in template
+  },
+  data() {
+    return {
+      name: "",
+      subject: "",
+      message: "",
+      honeypot: "",
+      lastSubmit: null,
+      siteKey: "81be2c46-9600-47d2-b334-d8268a36d8c8", // Replace with your hCaptcha site key
+      hCaptchaResponse: "", // Add a variable to store hCaptcha response
+    };
+  },
+  methods: {
+    onVerify(response) {
+      console.log("hCaptcha Response: ", response);
+      if (!response) {
+        alert("Please complete the CAPTCHA.");
+        return;
+      }
+      // Send the response to the backend for verification
+    },
+    sendEmail() {
+      // Prevent submission if honeypot is filled (bot detection)
+      if (this.honeypot) {
+        console.log("Bot detected!");
+        return;
+      }
+
+      // Rate-limiting mechanism (e.g., 30 seconds delay)
+      const now = new Date().getTime();
+      if (this.lastSubmit && now - this.lastSubmit < 30000) {
+        alert("You are submitting too quickly. Please wait a moment.");
+        return;
+      }
+
+      this.lastSubmit = now;
+
+      const emailSubject = encodeURIComponent(this.subject);
+      const emailBody = encodeURIComponent(
+        `Name: ${this.name}\n\nMessage: ${this.message}`
+      );
+
+      const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=firmanredhat2004@gmail.com&su=${emailSubject}&body=${emailBody}`;
+
+      window.location.href = mailtoLink;
+    },
+  },
 };
 </script>
+
+<style scoped>
+/* Add your styling here */
+</style>

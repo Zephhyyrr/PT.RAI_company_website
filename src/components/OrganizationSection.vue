@@ -1,8 +1,8 @@
 <template>
   <section id="organization" class="testimonials section light-background">
     <div class="container section-title" data-aos="fade-up">
-      <h2>Organization</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      <h2>Team Member</h2>
+      <p>Our Team Member at PT. Rumpun Alam Indonesia</p>
     </div>
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">

@@ -6,7 +6,7 @@
         <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
           <p class="who-we-are">Who We Are</p>
           <h3>Rumpun Alam Indonesia</h3>
-          <p class="fst">
+          <p class="text-justify" style="text-align: justify;">
             PT. Rumpun Alam Indonesia is one of the businesses that started in
             2021 starting in the field of manufacturing, processing (production)
             of local spices that dominate the natural harvest of West Sumatra
@@ -28,25 +28,25 @@
             </p>
             <li>
               <i class="bi bi-check-circle"></i>
-              <span
+              <span style="text-align: justify;"
                 >Introducing the natural wealth of West Sumatra - Indonesia to
                 the wider community both locally and internationally</span
               >
             </li>
             <li>
               <i class="bi bi-check-circle"></i>
-              <span
+              <span style="text-align: justify;"
                 >Preserving Indonesia's heritage and culture as an
                 internationally recognized spice producer
               </span>
             </li>
             <li>
               <i class="bi bi-check-circle"></i>
-              <span>Helps add to the country's foreign exchange</span>
+              <span style="text-align: justify;">Helps add to the country's foreign exchange</span>
             </li>
             <li>
               <i class="bi bi-check-circle"></i>
-              <span
+              <span style="text-align: justify;"
                 >Striving to uplift the dignity and well-being of the
                 surrounding environment</span
               >
@@ -57,7 +57,7 @@
             profits (profitability) as companies in general.
           </p>
           <p class="fst fs-6 fw-bold">Yield and marketing :</p>
-          <p>
+          <p style="text-align: justify;">
             PT Rumpun Alam Indonesia produces a variety of traditional spices of
             natural cultural heritage. In addition, West Sumatra is a
             combination of geographical structures that greatly affect the
@@ -73,28 +73,28 @@
           data-aos-delay="200"
         >
           <div class="row gy-4">
-            <div class="col-3 col-sm-6">
+            <div class="col-3 col-sm-6 p-3">
               <img
-                src="assets/img/dummy/kapulaga/kapulaga1.jpg"
+                src="/assets/img/images/kapulaga/kapulaga1.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
-            <div class="col-3 col-sm-6">
+            <div class="col-3 col-sm-6 p-3">
               <img
-                src="/assets/img/dummy/kayumanis/kayumanis1.jpg"
+                src="/assets/img/images/kayumanis/kayumanis1.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
-            <div class="col-3 col-sm-6">
+            <div class="col-3 col-sm-6 p-3">
               <img
-                src="/assets/img/dummy/kayumanis/kayumanis1.jpg"
+                src="/assets/img/images/buahpala/buahpala1.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
-            <div class="col-3 col-sm-6">
+            <div class="col-3 col-sm-6 p-3">
               <img
                 src="/assets/img/dummy/kayumanis/kayumanis1.jpg"
                 class="img-fluid"

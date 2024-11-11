@@ -96,7 +96,7 @@
             </div>
             <div class="col-3 col-sm-6 p-3">
               <img
-                src="/assets/img/dummy/kayumanis/kayumanis1.jpg"
+                src="/assets/img/images/vanilla/vanilla1.jpg"
                 class="img-fluid"
                 alt=""
               />

@@ -1,4 +1,55 @@
 [{
+    "id": "vanilla",
+    "title": "Vanilla",
+    "description": "Vanilla is a spice derived from the pods of orchids of the genus *Vanilla*, primarily obtained from the species *Vanilla planifolia*. It is valued for its distinctive flavor and aroma.",
+    "images": [
+      "/assets/img/images/vanilla/vanilla1.jpg"
+    ],
+    "intro": {
+      "Varieties": "Common varieties include Bourbon vanilla, Tahitian vanilla, and Mexican vanilla.",
+      "Origin": "Native to Mexico and cultivated in tropical regions globally.",
+      "Traditional Use": "Widely used in desserts, baking, and beverages."
+    },
+    "benefit": {
+      "Antioxidant": "Helps neutralize free radicals in the body.",
+      "Mood Enhancer": "Vanilla's pleasant aroma is believed to have a calming effect.",
+      "Anti-inflammatory": "May aid in reducing inflammation.",
+      "Supports Digestion": "Traditionally used to soothe stomach issues."
+    },
+    "types": {
+      "Bourbon Vanilla": "Rich, creamy flavor, most commonly used.",
+      "Tahitian Vanilla": "Floral and fruity undertones, unique aroma.",
+      "Mexican Vanilla": "Bold and slightly spicy flavor."
+    },
+    "comparison_with_other_spices": {
+      "Vanilla vs. Cinnamon": "Vanilla is subtle and sweet, cinnamon is warmer.",
+      "Vanilla vs. Nutmeg": "Nutmeg is more pungent, vanilla is smoother.",
+      "Vanilla vs. Cardamom": "Cardamom is more aromatic and slightly citrusy, vanilla is mellow."
+    },
+    "preparation": {
+      "Preparation": "Slice the pod lengthwise and scrape out the seeds.",
+      "Infuse": "Use whole pods in sauces or milk for infusions.",
+      "Cooking": "Add seeds or extract to enhance desserts and drinks."
+    },
+    "recipes": {
+      "Vanilla Ice Cream": "Classic dessert made with fresh vanilla beans.",
+      "Vanilla Custard": "Rich and creamy, perfect for pies and pastries.",
+      "Vanilla Latte": "A popular coffee beverage with a hint of vanilla."
+    },
+    "traditional_medicine": {
+      "Promotes Relaxation": "Vanilla's calming aroma is thought to help reduce feelings of tension.",
+      "Natural Remedy": "Believed to help with stomach discomfort.",
+      "Antibacterial Properties": ""
+    },
+    "tips_for_selection_and_storage": {
+      "Storage": "Keep in an airtight container, preferably glass.",
+      "Location": "Store in a cool, dark place to retain flavor.",
+      "Quality": "Choose plump, moist pods with a strong aroma."
+    },
+    "closing": "Vanilla, a cherished spice with a history of enhancing flavors and promoting well-being."
+  },
+  
+  {
     "id": "cardamom",
     "title": "Cardamom",
     "description": "Cardamom is a type of spice produced from the seeds of several plants of the genera Elettaria and Amomum in the family Zingiberaceae (ginger-ginger family)",

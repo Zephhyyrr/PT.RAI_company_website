@@ -10,7 +10,7 @@
       <div class="footer-contact pt-3">
         <p>Jl. Raya Nanggalo Nomer 28 A, Kp. Olo, Nanggalo District, Padang City, West Sumatera, 25173 - Indonesia </p>
         <p class="mt-3"><strong>Phone:</strong> <span>+6282374635328 (Alno Ramalino)</span></p>
-        <p class="mt-3"><strong>Phone:</strong> <span>+62628125341600 (Anjas)</span></p>
+        <p class="mt-3"><strong>Phone:</strong> <span>+6281275341600 (Anjas)</span></p>
         <p><strong>Email:</strong> <span>rumpunalamindonesia@gmail.com</span></p>
       </div>
       <div class="social-links d-flex mt-4">

@@ -1,7 +1,7 @@
 <template>
     <section id="product" class="features section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Produk</h2>
+        <h2>Product</h2>
         <p>Our products are sourced directly from spice farmers in Indonesia</p>
       </div>
   

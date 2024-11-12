@@ -20,9 +20,16 @@
               data-aos-delay="600"
               style="height: 100%; cursor: pointer"
             >
-              <i class="bi bi-geo-alt"></i>
+            <img
+              src="/assets/img/images/icons/ic_maps.png"
+              alt="WhatsApp Icon"
+              style="width: 55px; height: 55px"
+            />
               <h3>Address</h3>
-              <p style="text-align: center;">Jl. Raya Nanggalo No. 28 A, Kp. Olo, Nanggalo District, Padang City, West Sumatera, 25173 - Indonesia </p>
+              <p style="text-align: center">
+                Jl. Raya Nanggalo No. 28 A, Kp. Olo, Nanggalo District, Padang
+                City, West Sumatera, 25173 - Indonesia
+              </p>
             </div>
           </a>
         </div>
@@ -34,7 +41,11 @@
             data-aos-delay="400"
             style="height: 100%"
           >
-            <i class="bi bi-whatsapp"></i>
+            <img
+              src="/assets/img/images/icons/ic_wa.png"
+              alt="WhatsApp Icon"
+              style="width: 75px; height: 75px"
+            />
             <h3>Chat on WhatsApp</h3>
             <p>
               <a href="https://wa.me/6282374635328" target="_blank"
@@ -61,7 +72,11 @@
               data-aos-delay="600"
               style="height: 100%; cursor: pointer"
             >
-              <i class="bi bi-instagram"></i>
+            <img
+              src="/assets/img/images/icons/ic_ig.png"
+              alt="WhatsApp Icon"
+              style="width: 75px; height: 75px"
+            />
               <h3>Follow Our Instagram</h3>
               <p>pt.rumpunalamindonesia</p>
             </div>

@@ -22,7 +22,7 @@
             >
               <i class="bi bi-geo-alt"></i>
               <h3>Address</h3>
-              <p style="text-align: center;">Jl. Raya Nanggalo Nomer 28 A, Kp. Olo, Nanggalo District, Padang City, West Sumatera, 25173 - Indonesia </p>
+              <p style="text-align: center;">Jl. Raya Nanggalo No. 28 A, Kp. Olo, Nanggalo District, Padang City, West Sumatera, 25173 - Indonesia </p>
             </div>
           </a>
         </div>
@@ -214,7 +214,7 @@ export default {
         `Name: ${this.name}\n\nMessage: ${this.message}`
       );
 
-      const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=firmanredhat2004@gmail.com&su=${emailSubject}&body=${emailBody}`;
+      const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=rumpunalamindonesia@gmail.com&su=${emailSubject}&body=${emailBody}`;
 
       window.location.href = mailtoLink;
     },

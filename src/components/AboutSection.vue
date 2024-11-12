@@ -75,7 +75,7 @@
           <div class="row gy-4">
             <div class="col-3 col-sm-6 p-3">
               <img
-                src="/assets/img/images/kapulaga/kapulaga1.png"
+                src="/assets/img/images/vanilla/vanilla1.png"
                 class="img-fluid"
                 alt=""
               />
@@ -96,7 +96,7 @@
             </div>
             <div class="col-3 col-sm-6 p-3">
               <img
-                src="/assets/img/images/vanilla/vanilla1.jpg"
+                src="/assets/img/images/kapulaga/kapulaga1.png"
                 class="img-fluid"
                 alt=""
               />

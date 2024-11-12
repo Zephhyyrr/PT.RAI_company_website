@@ -3,7 +3,8 @@
     "title": "Vanilla",
     "description": "Vanilla is a spice derived from the pods of orchids of the genus *Vanilla*, primarily obtained from the species *Vanilla planifolia*. It is valued for its distinctive flavor and aroma.",
     "images": [
-      "/assets/img/images/vanilla/vanilla1.jpg"
+      "/assets/img/images/vanilla/vanilla1.png",
+      "/assets/img/images/vanilla/vanilla2.png"
     ],
     "intro": {
       "Varieties": "Common varieties include Bourbon vanilla, Tahitian vanilla, and Mexican vanilla.",

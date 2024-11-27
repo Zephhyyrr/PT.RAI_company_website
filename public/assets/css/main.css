@@ -1103,6 +1103,11 @@ section,
 --------------------------------------------------------------*/
 .clients {
   padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .clients .client-logo {
@@ -1110,14 +1115,14 @@ section,
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  flex: 0 0 20%;
+  max-width: 200px;
 }
 
 .clients .client-logo img {
   padding: 20px 40px;
   max-width: 90%;
   transition: 0.3s;
-  opacity: 0.5;
-  filter: grayscale(100);
 }
 
 .clients .client-logo img:hover {

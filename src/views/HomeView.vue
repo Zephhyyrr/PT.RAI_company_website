@@ -4,6 +4,7 @@
     <HeroSection id="home"/>
     <AboutSection id="about"/>
     <ProductSection id="product" />
+    <PartnerSection id="partner" />
     <OrganizationSection id="organization"/>
     <ContactSection id="contact"/>
   </main>
@@ -13,6 +14,7 @@
 import HeroSection from "../components/HeroSection.vue";
 import AboutSection from "../components/AboutSection.vue";
 import ProductSection from "../components/ProductSection.vue";
+import PartnerSection from "@/components/PartnerSection.vue";
 import ContactSection from "@/components/ContactSection.vue";
 import OrganizationSection from "@/components/OrganizationSection.vue";
 export default {
@@ -21,6 +23,7 @@ export default {
     HeroSection,
     AboutSection,
     ProductSection,
+    PartnerSection,
     OrganizationSection,
     ContactSection,
   },

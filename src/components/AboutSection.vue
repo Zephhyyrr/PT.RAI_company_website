@@ -27,25 +27,21 @@
               PT Rumpun Alam Indonesia mission and objectives :
             </p>
             <li>
-              <i class="bi bi-check-circle"></i>
               <span style="text-align: justify;"
                 >Introducing the natural wealth of West Sumatra - Indonesia to
                 the wider community both locally and internationally</span
               >
             </li>
             <li>
-              <i class="bi bi-check-circle"></i>
               <span style="text-align: justify;"
                 >Preserving Indonesia's heritage and culture as an
                 internationally recognized spice producer
               </span>
             </li>
             <li>
-              <i class="bi bi-check-circle"></i>
               <span style="text-align: justify;">Helps add to the country's foreign exchange</span>
             </li>
             <li>
-              <i class="bi bi-check-circle"></i>
               <span style="text-align: justify;"
                 >Striving to uplift the dignity and well-being of the
                 surrounding environment</span
@@ -75,28 +71,28 @@
           <div class="row gy-4">
             <div class="col-3 col-sm-6 p-3">
               <img
-                src="/assets/img/images/vanilla/vanilla1.png"
+                src="/assets/img/images/kayumanis-version/CinnamonStick-6cm.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
             <div class="col-3 col-sm-6 p-3">
               <img
-                src="/assets/img/images/kayumanis/kayumanis1.png"
+                src="/assets/img/images/kayumanis-version/CinnamonStick-8cm.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
             <div class="col-3 col-sm-6 p-3">
               <img
-                src="/assets/img/images/buahpala/buahpala1.png"
+                src="/assets/img/images/kayumanis-version/Cinnamon-KF.png"
                 class="img-fluid"
                 alt=""
               />
             </div>
             <div class="col-3 col-sm-6 p-3">
               <img
-                src="/assets/img/images/kapulaga/kapulaga1.png"
+                src="/assets/img/images/kayumanis-version/Cinnamon-KA/KB.png"
                 class="img-fluid"
                 alt=""
               />

@@ -48,12 +48,12 @@
             />
             <h3>Chat on WhatsApp</h3>
             <p>
-              <a href="https://wa.me/6282374635328" target="_blank"
+              <a href="https://wa.me/6282374635328" target="_blank" style="color: #000;"
                 >+6282374635328 (Alno Ramalino)</a
               >
             </p>
             <p>
-              <a href="https://wa.me/6281275341600" target="_blank"
+              <a href="https://wa.me/6281275341600" target="_blank" style="color: #000;"
                 >+6281275341600 (Anjas)</a
               >
             </p>

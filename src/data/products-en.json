@@ -1,195 +1,38 @@
-[{
-    "id": "vanilla",
-    "title": "Vanilla",
-    "description": "Vanilla is a spice derived from the pods of orchids of the genus *Vanilla*, primarily obtained from the species *Vanilla planifolia*. It is valued for its distinctive flavor and aroma.",
-    "images": [
-      "/assets/img/images/vanilla/vanilla1.png",
-      "/assets/img/images/vanilla/vanilla2.png"
-    ],
-    "intro": {
-      "Varieties": "Common varieties include Bourbon vanilla, Tahitian vanilla, and Mexican vanilla.",
-      "Origin": "Native to Mexico and cultivated in tropical regions globally.",
-      "Traditional Use": "Widely used in desserts, baking, and beverages."
-    },
-    "benefit": {
-      "Antioxidant": "Helps neutralize free radicals in the body.",
-      "Mood Enhancer": "Vanilla's pleasant aroma is believed to have a calming effect.",
-      "Anti-inflammatory": "May aid in reducing inflammation.",
-      "Supports Digestion": "Traditionally used to soothe stomach issues."
-    },
-    "types": {
-      "Bourbon Vanilla": "Rich, creamy flavor, most commonly used.",
-      "Tahitian Vanilla": "Floral and fruity undertones, unique aroma.",
-      "Mexican Vanilla": "Bold and slightly spicy flavor."
-    },
-    "comparison_with_other_spices": {
-      "Vanilla vs. Cinnamon": "Vanilla is subtle and sweet, cinnamon is warmer.",
-      "Vanilla vs. Nutmeg": "Nutmeg is more pungent, vanilla is smoother.",
-      "Vanilla vs. Cardamom": "Cardamom is more aromatic and slightly citrusy, vanilla is mellow."
-    },
-    "preparation": {
-      "Preparation": "Slice the pod lengthwise and scrape out the seeds.",
-      "Infuse": "Use whole pods in sauces or milk for infusions.",
-      "Cooking": "Add seeds or extract to enhance desserts and drinks."
-    },
-    "recipes": {
-      "Vanilla Ice Cream": "Classic dessert made with fresh vanilla beans.",
-      "Vanilla Custard": "Rich and creamy, perfect for pies and pastries.",
-      "Vanilla Latte": "A popular coffee beverage with a hint of vanilla."
-    },
-    "traditional_medicine": {
-      "Promotes Relaxation": "Vanilla's calming aroma is thought to help reduce feelings of tension.",
-      "Natural Remedy": "Believed to help with stomach discomfort.",
-      "Antibacterial Properties": ""
-    },
-    "tips_for_selection_and_storage": {
-      "Storage": "Keep in an airtight container, preferably glass.",
-      "Location": "Store in a cool, dark place to retain flavor.",
-      "Quality": "Choose plump, moist pods with a strong aroma."
-    },
-    "closing": "Vanilla, a cherished spice with a history of enhancing flavors and promoting well-being."
-  },
-  
+[
   {
-    "id": "cardamom",
-    "title": "Cardamom",
-    "description": "Cardamom is a type of spice produced from the seeds of several plants of the genera Elettaria and Amomum in the family Zingiberaceae (ginger-ginger family)",
+    "id": "Cinnamon-Stick-6cm",
+    "title": "Cinnamon Stick 6CM",
+    "short": "Cassia cinnamon length 6.0CM, essential oil content ranges from 4% to 8%",
+    "description": "Cassia cinnamon length 6.0CM, essential oil content ranges from 4% to 8%",
     "images": [
-      "/assets/img/images/kapulaga/kapulaga1.png"
-    ],
-    "video": ["/assets/img/videos/Vkapulaga1.mp4"],
-    "intro": {
-      "Varieties": "There are green and black cardamom.",
-      "Origin": "Native to India and other tropical countries.",
-      "Traditional Use": "Often used in cooking and beverages."
-    },
-    "benefit": {
-      "Antioxidant": "Fights free radicals in the body.",
-      "Freshens Breath": "Helps combat bad breath.",
-      "Reduces Stress": "Its aroma soothes the mind and soul.",
-      "Supports Digestion and Respiratory Health": ""
-    },
-    "types": {
-      "Green Cardamom": "Mild flavor, commonly used.",
-      "Black Cardamom": "Stronger, smoky flavor.",
-      "White Cardamom": "Rarer, used in specific dishes."
-    },
-    "comparison_with_other_spices": {
-      "Cardamom vs. Clove": "Cardamom is fresher, clove is stronger.",
-      "Cardamom vs. Cinnamon": "Cardamom is more fragrant, cinnamon is sweet.",
-      "Cardamom vs. Ginger": "Ginger is spicy, cardamom is more aromatic."
-    },
-    "preparation": {
-      "Preparation": "Rinse and dry thoroughly.",
-      "Crush Seeds": "Use a mortar to release aroma.",
-      "Cooking": "Add to dishes as desired."
-    },
-    "recipes": {
-      "Cardamom Curry": "Delicious when paired with meat and vegetables.",
-      "Cardamom Dessert": "Ideal for baklava and special pastries.",
-      "Spice Drink": "Can be used in tea and coffee."
-    },
-    "traditional_medicine": {
-      "Relieves Cough and Cold": "",
-      "Natural Remedy": "To relieve stomach ache.",
-      "Lowers Blood Pressure": ""
-    },
-    "tips_for_selection_and_storage": {
-      "Storage": "Keep in an airtight container.",
-      "Location": "Store away from light and moisture.",
-      "Quality": "Choose clean, undamaged seeds."
-    },
-    "closing": "Cardamom, a symbol of Indonesia's culinary heritage."
+      "/assets/img/images/kayumanis-version/CinnamonStick-6cm.png"
+    ]
   },
   {
-    "id": "cinnamon",
-    "title": "Cinnamon",
-    "description": "Cinnamon bark is a kind of spice obtained from the inner bark of several species of trees of the genus Cinnamomum used for sweet and savory dishes. ",
+    "id": "Cinnamon-Stick-8cm",
+    "title": "Cinnamon Stick 8CM",
+    "short": "Cassia cinnamon length 8.0CM, essential oil content ranges from 4% to 8%",
+    "description": "Cassia cinnamon length 8.0CM, essential oil content ranges from 4% to 8%",
     "images": [
-      "/assets/img/images/kayumanis/kayumanis1.png"
-    ],
-    "video": ["/assets/img/videos/Vkayumanis1.mp4",
-      "/assets/img/videos/Vkayumanis2.mp4"
-    ],
-    "intro": {
-      "Origin": "Cinnamon comes from the bark of Cinnamomum trees.",
-      "Varieties": "Common types are Cinnamomum verum and Cinnamomum cassia.",
-      "Flavor and Aroma": "Cinnamon has a distinct sweet and spicy flavor."
-    },
-    "benefit": {
-      "Anti-Inflammatory": "Contains anti-inflammatory compounds that help reduce inflammation.",
-      "Boosts Metabolism": "Consumption may help increase metabolism.",
-      "Supports Heart Health": "Beneficial for heart health and cholesterol reduction."
-    },
-    "types": {
-      "Cinnamomum verum": "True cinnamon, with a milder and sweeter taste.",
-      "Cinnamomum cassia": "Stronger, commonly used in cooking.",
-      "Cinnamomum loureiroi": "Vietnamese cinnamon, with a very strong aroma."
-    },
-    "usage": {
-      "Adds Aroma": "Add to soups or curries for a strong aroma.",
-      "Drink Mix": "Use in tea or coffee for a warm taste.",
-      "Sweet Pairing": "Combine in baked goods or oatmeal."
-    },
-    "historical_use": {
-      "History in Indonesia": "Used in Indonesia since the 9th century as a valuable spice.",
-      "Trade Center": "Indonesia became a center for cinnamon trade in the global spice market."
-    },
-    "ayurvedic_perspective": {
-      "Energy Balance": "Helps balance pitta and kapha in the body.",
-      "Daily Use": "Commonly used in herbal mixtures and Ayurvedic teas.",
-      "Health Benefits": "Believed to aid digestion and boost immunity."
-    },
-    "storage_tips": {
-      "Storage Condition": "Store in a cool, dry place.",
-      "Container": "Use an airtight container to keep it fresh.",
-      "Shelf Life": "Whole cinnamon lasts longer than powder."
-    },
-    "closing": "Cinnamon is an aromatic spice with numerous benefits."
+      "/assets/img/images/kayumanis-version/CinnamonStick-8cm.png"
+    ]
   },
   {
-    "id": "nutmeg",
-    "title": "Nutmeg",
-    "description": "Nutmeg has anti-inflammatory and antispasmodic properties that can help relieve digestive disorders such as flatulence, gas and diarrhea. Nutmeg extract has been used in traditional medicine to relieve indigestion for centuries.",
+    "id": "Cinnamon-KF",
+    "title": "Cinnamon KF",
+    "short": "Cassia Cinnamon cassia cinnamnon lenght 1-2 meters essetial oil content ranges from 3% to 4%",
+    "description": "Cassia Cinnamon cassia cinnamnon lenght 1-2 meters essetial oil content ranges from 3% to 4%",
     "images": [
-      "/assets/img/images/buahpala/buahpala1.png",
-      "/assets/img/images/buahpala/buahpala2.png"
-    ],
-    "intro": {
-      "Origin": "Nutmeg originates from the Banda Islands, Indonesia, known for its distinct aroma.",
-      "Health Benefits": "Rich in antioxidants, nutmeg can improve digestive health.",
-      "Unique Flavor": "Offers a sweet and spicy flavor, ideal for various dishes and pastries."
-    },
-    "benefit": {
-      "Heart Health": "Helps reduce the risk of heart disease.",
-      "Improves Sleep Quality": "Has a calming effect that can promote better sleep.",
-      "Aids Digestion": "Assists in reducing digestive issues and bloating."
-    },
-    "usage": {
-      "Traditional Dishes": "Used in Indonesian dishes such as rendang or soto.",
-      "Sweet Treats": "Enhances the aroma in pastries and drinks like ginger tea.",
-      "Spice Blends": "Often combined with cinnamon, cloves, and ginger."
-    },
-    "selection_and_storage": {
-      "Select Fresh": "Choose nutmeg that is hard and brightly colored.",
-      "Storage": "Keep in a cool, dry place for freshness.",
-      "Best Before": "Use within 6 months for optimal quality."
-    },
-    "tips_for_optimal_use": {
-      "Moderate Use": "Use sparingly to avoid an overpowering taste.",
-      "Combine with Other Ingredients": "Mix with fresh ingredients to enhance aroma.",
-      "Experiment": "Try in various dishes to find the best combinations."
-    },
-    "recipes": {
-      "Beef Rendang": "Use nutmeg as a spice in flavorful, spicy rendang.",
-      "Nutmeg Cake": "Add to cake batter for a fragrant and savory result.",
-      "Nutmeg Sambal": "Make sambal with nutmeg as a main ingredient, great as a side."
-    },
-    "enhancement_in_cuisine": {
-      "Distinct Aroma": "Nutmeg enhances the aroma of dishes, making them more appetizing.",
-      "Unique Taste": "Brings a flavor combination that makes food memorable.",
-      "Versatile": "Pairs well with both sweet and savory dishes for varied flavors."
-    },
-    "closing": "Nutmeg is a rich, essential spice worth trying."
+      "/assets/img/images/kayumanis-version/Cinnamon-KF.png"
+    ]
+  },
+  {
+    "id": "Cinnamon-KAKB",
+    "title": "Cinnamon KA/KB",
+    "short": "cassia cinnamnon lenght 1 metersessetial oil content ranges from 2% to 3%",
+    "description": "cassia cinnamnon lenght 1 metersessetial oil content ranges from 2% to 3%",
+    "images": [
+      "/assets/img/images/kayumanis-version/Cinnamon-KA/KB.png"
+    ]
   }
 ]

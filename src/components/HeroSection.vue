@@ -1,31 +1,44 @@
 <template>
     <section id="home" class="hero section">
-        <div class="hero-bg ">
-            <img src="assets/img/rempah_background.jpg" alt="">
-        </div>
-        <div class="container text-center">
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <h1 data-aos="fade-up">Welcome to <span>Rumpun Alam Indonesia</span></h1>
-                <p data-aos="fade-up" data-aos-delay="100">Spices Exporting Company from Indonesia<br></p>
-                <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-                </div>
-            </div>
-        </div>
+      <div class="hero-bg">
+        <img src="/assets/img/header/header3.png" alt="Background Image" />
+      </div>
+      <div class="container text-center">
+        <v-carousel style="height: 400px;">
+          <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" cover></v-carousel-item>
+          <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg" cover></v-carousel-item>
+          <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" cover></v-carousel-item>
+        </v-carousel>
+      </div>
     </section>
-</template>
-
-<script>
-    import AOS from "aos";
-    import "aos/dist/aos.css";
-
-    export default {
-        name: "HeroSection",
-        mounted() {
-            AOS.init();
-        },
-    };
-</script>
-
-<style scoped>
-    /* addstyl */
-</style>
+  </template>
+  
+  <script>
+  import AOS from 'aos';
+  import 'aos/dist/aos.css';
+  
+  export default {
+    name: 'HeroSection',
+    mounted() {
+      AOS.init();
+    },
+  };
+  </script>
+  
+  <style scoped>
+  .hero {
+    position: relative;
+  }
+  
+  .hero-bg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .v-carousel {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  </style>
+  

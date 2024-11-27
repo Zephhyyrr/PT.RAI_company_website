@@ -50,8 +50,8 @@ export default {
     return {
       // Array combining images and YouTube links
       items: [
-        { src: '/assets/img/images/kayumanis-version/CinnamonStick-6cm.png' }, // Image 1
         { src: '/assets/img/images/kayumanis-version/CinnamonStick-8cm.png' }, // Image 2
+        { src: '/assets/img/images/kayumanis-version/CinnamonStick-6cm.png' }, // Image 1
         { src: '/assets/img/images/kayumanis-version/Cinnamon-KF.png' },      // Image 3
         { src: '/assets/img/images/kayumanis-version/Cinnamon-KA/KB.png' },    // Image 4
         { href: 'https://youtube.com/shorts/D0ukIEVJ5BQ?si=0zLi_6n0bOSETb2j' }, // YouTube link 1

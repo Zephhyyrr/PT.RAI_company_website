@@ -24,8 +24,8 @@
               class="feature-item text-center mb-5"
             >
               <div class="content mt-4">
-                <h3>{{ formatTitle(key) }}</h3>
-                <p v-if="typeof featureData === 'string'">{{ featureData }}</p>
+                <h3 style="font-weight: bold;">{{ formatTitle(key) }}</h3>
+                <p class="preformatted-text" style="text-align: justify;" v-if="typeof featureData === 'string'">{{ featureData }}</p>
                 <ul v-else>
                   <li v-for="(value, subKey) in featureData" :key="subKey">
                     <strong>{{ formatTitle(subKey) }}:</strong> {{ value }}
@@ -102,6 +102,9 @@ export default {
 <style scoped>
 .features-details {
   padding: 4rem 0;
+}
+.preformatted-text {
+  white-space: pre-line;
 }
 .img-feature {
   width: 100%;

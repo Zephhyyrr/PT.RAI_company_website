@@ -8,17 +8,25 @@
       <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <!-- Carousel Inner -->
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/assets/img/images/kayumanis-version/CinnamonStick-6cm.png" class="d-block w-100 rounded-lg" alt="Image 1">
-          </div>
-          <div class="carousel-item">
-            <img src="/assets/img/images/kayumanis-version/CinnamonStick-8cm.png" class="d-block w-100 rounded-lg" alt="Image 2">
-          </div>
-          <div class="carousel-item">
-            <img src="/assets/img/images/kayumanis-version/Cinnamon-KF.png" class="d-block w-100 rounded-lg" alt="Image 3">
-          </div>
-          <div class="carousel-item">
-            <img src="/assets/img/images/kayumanis-version/Cinnamon-KA/KB.png" class="d-block w-100 rounded-lg" alt="Image 3">
+          <div v-for="(item, index) in items" :key="index" class="carousel-item" :class="{ active: index === 0 }">
+            <a :href="item.href" target="_blank" class="d-block w-100">
+              <!-- Check if it's a YouTube link -->
+              <template v-if="item.href">
+                <!-- Embed YouTube video -->
+                <iframe
+                  :src="'https://www.youtube.com/embed/' + getYouTubeVideoId(item.href)"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  class="d-block w-100"
+                  style="height: 400px; border-radius: 15px;"
+                ></iframe>
+              </template>
+              <!-- If it's an image, display it -->
+              <template v-else>
+                <img :src="item.src" class="d-block w-100 rounded-lg" :alt="'Image ' + (index + 1)" />
+              </template>
+            </a>
           </div>
         </div>
         <!-- Carousel Controls -->
@@ -34,11 +42,36 @@
     </div>
   </section>
 </template>
+
 <script>
 export default {
   name: 'HeroSection',
+  data() {
+    return {
+      // Array combining images and YouTube links
+      items: [
+        { src: '/assets/img/images/kayumanis-version/CinnamonStick-6cm.png' }, // Image 1
+        { src: '/assets/img/images/kayumanis-version/CinnamonStick-8cm.png' }, // Image 2
+        { src: '/assets/img/images/kayumanis-version/Cinnamon-KF.png' },      // Image 3
+        { src: '/assets/img/images/kayumanis-version/Cinnamon-KA/KB.png' },    // Image 4
+        { href: 'https://youtube.com/shorts/D0ukIEVJ5BQ?si=0zLi_6n0bOSETb2j' }, // YouTube link 1
+        { href: 'https://youtube.com/shorts/hvtvDwcObiE?si=L5pZVeVQoksDrXRs' }  // YouTube link 2
+      ]
+    };
+  },
+  methods: {
+  getYouTubeVideoId(url) {
+    const shortUrlMatch = url.match(/(?:youtube\.com\/shorts\/)([a-zA-Z0-9_-]{11})/);
+    if (shortUrlMatch) {
+      return shortUrlMatch[1]; 
+    }
+    const videoIdMatch = url.match(/(?:youtu\.be\/|youtube\.com\/(?:[^/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/)([a-zA-Z0-9_-]{11}))/);
+    return videoIdMatch && videoIdMatch[1];
+  }
+}
 };
 </script>
+
 <style scoped>
 .hero {
   position: relative;
@@ -51,7 +84,6 @@ export default {
 .hero-bg img {
   width: 100%;
   height: 900px; /* Menambah tinggi gambar hero */
-  /* object-fit: cover; */
 }
 
 .carousel-inner {
@@ -93,4 +125,3 @@ button.carousel-control-next:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
 </style>
-

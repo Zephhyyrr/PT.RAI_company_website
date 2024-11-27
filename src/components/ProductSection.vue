@@ -39,7 +39,7 @@
       </div>
 
       <div v-if="cinnamonDetails.length > 0">
-        <div class="card mb-4" style="padding: 15px">
+        <div class="card mb-4" style="padding: 30px">
           <h2 class="section-header" style="text-align: center">
             Cinnamon Form
           </h2>
@@ -58,13 +58,13 @@
             </p>
           </div>
           <!-- Long Description (only once) -->
-          <div v-if="longDescription" style="padding: 15px; margin-top: 20px">
+          <div v-if="longDescription" style="margin-top: 20px">
             <h4 style="text-align: center; font-weight: bold;">Premium Cinnamon from Kerinci</h4>
             <p style="text-align: justify">{{ longDescription }}</p>
           </div>
 
           <!-- Moisture and Humidity Content (only once) -->
-          <div v-if="moistureHumidity" style="padding: 15px; margin-top: 20px">
+          <div v-if="moistureHumidity" style="margin-top: 20px">
             <h4 style="text-align: center; font-weight: bold;">{{ moistureHumidity.title }}</h4>
             <p style="text-align: justify">
               <strong>Moisture Content:</strong>
@@ -94,7 +94,6 @@ export default {
     };
   },
   created() {
-    // Extract the long description and moisture/humidity content from cinnamonDetails if available
     const longDescriptionItem = this.cinnamonDetails.find(
       (item) => item["long-description"]
     );

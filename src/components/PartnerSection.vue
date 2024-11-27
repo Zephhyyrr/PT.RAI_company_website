@@ -1,6 +1,6 @@
 <template>
-  <section id="partner" class="clients section light-background">
-    <div class="container" data-aos="fade-up" style="margin-top: 100px;">
+  <section id="organization" class="clients section light-background">
+    <div class="container" data-aos="fade-up" style="margin-top: 50px;">
       <div class="row gy-4 justify-content-center">
         <div
           v-for="(client, index) in clients"
@@ -37,7 +37,7 @@ export default {
 
 .row {
   display: flex;
-  justify-content: center; /* Menjaga elemen berada di tengah */
+  justify-content: center; 
 }
 
 .client-logo {

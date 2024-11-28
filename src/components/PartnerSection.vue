@@ -1,15 +1,36 @@
 <template>
   <section id="organization" class="clients section light-background">
     <div class="container" data-aos="fade-up" style="margin-top: 50px;">
-      <div class="row gy-4 justify-content-center">
+      <!-- Untuk layar besar -->
+      <div class="row gy-4 justify-content-center d-none d-md-flex">
         <div
           v-for="(client, index) in clients"
           :key="index"
-          class="col-xl-2 col-md-3 col-6 client-logo"
+          class="col-xl-2 col-md-3 col-6 client-logo" style="padding: 0;"
         >
           <img :src="client.imgSrc" class="img-fluid" :alt="client.altText" />
         </div>
       </div>
+
+      <!-- Slider untuk layar kecil -->
+      <v-carousel
+        class="d-md-none horizontal-slider"
+        hide-delimiters
+        show-arrows
+        cycle
+      >
+        <v-carousel-item>
+          <div class="slider-container">
+            <div
+              v-for="(client, index) in clients"
+              :key="index"
+              class="client-logo"
+            >
+              <img :src="client.imgSrc" class="img-fluid" :alt="client.altText" />
+            </div>
+          </div>
+        </v-carousel-item>
+      </v-carousel>
     </div>
   </section>
 </template>
@@ -37,18 +58,40 @@ export default {
 
 .row {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .client-logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+}
+
+/* Slider container untuk horizontal layout */
+.horizontal-slider .slider-container {
+  display: flex; /* Mengatur logo dalam baris horizontal */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.horizontal-slider .v-carousel__container {
+  overflow-x: auto; /* Memastikan elemen dapat digeser */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontal-slider .v-carousel-item {
+  width: 100%; /* Menyesuaikan slider dengan kontainer */
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 640px) {
   .client-logo img {
-    padding: 20px;
+    padding: 10px;
   }
 }
 </style>

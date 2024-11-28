@@ -65,15 +65,17 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 0px;
+  gap: 5px;
 }
 
 /* Slider container untuk horizontal layout */
 .horizontal-slider .slider-container {
   display: flex; /* Mengatur logo dalam baris horizontal */
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 20px;
 }
 
 .horizontal-slider .v-carousel__container {
@@ -91,7 +93,7 @@ export default {
 
 @media (max-width: 640px) {
   .client-logo img {
-    padding: 10px;
+    padding: 0px;
   }
 }
 </style>

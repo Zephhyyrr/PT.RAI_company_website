@@ -71,7 +71,7 @@ export default {
   data() {
     return {
       items: [
-        { src: "assets/img/header/Owner-header.jpg" },
+        { src: "assets/img/header/Owner-header.png" },
         { src: "/assets/img/images/kayumanis-version/CinnamonStick-8cm.png" },
         { src: "/assets/img/images/kayumanis-version/Cinnamon-2.png" },
         { src: "/assets/img/images/kayumanis-version/Cinnamon-KF.png" },

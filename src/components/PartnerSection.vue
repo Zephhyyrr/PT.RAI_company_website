@@ -69,9 +69,8 @@ export default {
   gap: 5px;
 }
 
-/* Slider container untuk horizontal layout */
 .horizontal-slider .slider-container {
-  display: flex; /* Mengatur logo dalam baris horizontal */
+  display: flex; 
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -79,7 +78,7 @@ export default {
 }
 
 .horizontal-slider .v-carousel__container {
-  overflow-x: auto; /* Memastikan elemen dapat digeser */
+  overflow-x: auto;
   display: flex;
   justify-content: center;
   align-items: center;

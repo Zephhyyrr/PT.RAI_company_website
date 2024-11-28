@@ -131,8 +131,7 @@ export default {
 .carousel-item img {
   object-fit: cover;
   border-radius: 15px;
-  height: auto;
-  width: 100%; /* Tinggi default untuk desktop */
+  height: 400px; /* Tinggi default untuk desktop */
 }
 
 /* Responsiveness for Carousel */

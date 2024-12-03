@@ -8,10 +8,10 @@
     </div>
 
     <div class="container">
-      <div class="row">
+      <div class="row d-flex justify-content-center" data-aos="fade-up">
         <div
           class="col-lg-3 col-md-4 col-sm-6 mb-4"
-          v-for="product in products"
+          v-for="product in products.slice(0, 4)"
           :key="product.id"
         >
           <router-link
@@ -38,7 +38,7 @@
         </div>
       </div>
 
-      <div v-if="cinnamonDetails.length > 0">
+      <div v-if="cinnamonDetails.length > 0" data-aos="fade-up">
         <div class="card mb-4" style="padding: 30px">
           <h2 class="section-header" style="text-align: center">
             Cinnamon Form
@@ -59,19 +59,59 @@
           </div>
           <!-- Long Description (only once) -->
           <div v-if="longDescription" style="margin-top: 20px">
-            <h4 style="text-align: center; font-weight: bold;">Premium Cinnamon from Kerinci</h4>
+            <h4 style="text-align: center; font-weight: bold">
+              Premium Cinnamon from Kerinci
+            </h4>
             <p style="text-align: justify">{{ longDescription }}</p>
           </div>
 
           <!-- Moisture and Humidity Content (only once) -->
           <div v-if="moistureHumidity" style="margin-top: 20px">
-            <h4 style="text-align: center; font-weight: bold;">{{ moistureHumidity.title }}</h4>
+            <h4 style="text-align: center; font-weight: bold">
+              {{ moistureHumidity.title }}
+            </h4>
             <p style="text-align: justify">
               <strong>Moisture Content:</strong>
               {{ moistureHumidity["Moisture Content"] }}<br />
               <strong>Humidity:</strong> {{ moistureHumidity.Humidity }}
             </p>
           </div>
+        </div>
+      </div>
+
+      <div class="container section-title pt-5" data-aos="fade-up">
+      <h2 style="color: white">We also provide other premium spice products from Indonesia.</h2>
+      <p style="color: white">
+        Let's Check the Detail Below
+      </p>
+    </div>
+      <div class="row d-flex justify-content-center" data-aos="fade-up">
+        <div
+          class="col-lg-3 col-md-4 col-sm-6 mb-4"
+          v-for="product in products.slice(4)"
+          :key="product.id"
+        >
+          <router-link
+            :to="`/product/${product.id}`"
+            class="card h-100 shadow-card"
+          >
+            <img
+              class="card-img-top"
+              :src="
+                product.images.length > 0
+                  ? product.images[0]
+                  : 'https://via.placeholder.com/300x200'
+              "
+              :alt="product.title"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title text-success fw-bold">
+                {{ product.title }}
+              </h5>
+              <p class="card-text text-muted">{{ product.short }}</p>
+              <p class="card-text text-muted">{{ product.details }}</p>
+            </div>
+          </router-link>
         </div>
       </div>
     </div>

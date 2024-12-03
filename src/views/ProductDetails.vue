@@ -41,6 +41,7 @@
 </template>
 
 <script>
+import { nextTick } from 'vue';
 import products_en from "../data/products-en.json";
 import products_cn from "../data/products-cn.json";
 import products_id from "../data/products-id.json";
@@ -96,9 +97,16 @@ export default {
     "$route.params.id": function () {
       this.loadProductEn();
     }
+  },
+  mounted() {
+    // Pastikan scroll ke atas setelah halaman dimuat
+    nextTick(() => {
+      window.scrollTo(0, 0); // Scroll ke atas setelah render selesai
+    });
   }
 };
 </script>
+
 <style scoped>
 .features-details {
   padding: 4rem 0;
@@ -134,4 +142,5 @@ export default {
   background-color: #f9f9f9;
 }
 </style>
+
 

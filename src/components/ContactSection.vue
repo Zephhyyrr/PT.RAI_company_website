@@ -1,7 +1,7 @@
 <template>
   <section id="contact" class="contact section light-background" style="padding: 0;">
     <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
+    <div class="container section-title" data-aos="fade-up" style="padding-top: 30px;">
       <h2>Contact</h2>
       <p>Contact us here</p>
     </div>

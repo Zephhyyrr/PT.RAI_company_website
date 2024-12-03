@@ -1,5 +1,8 @@
 <template>
-  <section id="organization" class="clients section light-background">
+  <section id="organization" class="clients section light-background" style="border-top: 2px solid rgba(0, 0, 0, 0.1); border-bottom: 5px solid rgba(0, 0, 0, 0.1);">
+    <div class="section-title" data-aos="fade-up" style="padding-bottom: 0px">
+      <h2 style="color: black;">We Are Engaged In a Partnership With This Company</h2>
+    </div>
     <div class="container" data-aos="fade-up" style="margin-top: 50px;">
       <!-- Untuk layar besar -->
       <div class="row gy-4 justify-content-center d-none d-md-flex">
@@ -32,7 +35,8 @@
         </v-carousel-item>
       </v-carousel>
     </div>
-  </section>
+</section>
+
 </template>
 
 <script>

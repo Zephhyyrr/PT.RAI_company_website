@@ -5,7 +5,7 @@
     <AboutSection id="about"/>
     <ProductSection id="product" />
     <PartnerSection id="partner" />
-    <OrganizationSection id="organization"/>
+    <!-- <OrganizationSection id="organization"/> -->
     <ContactSection id="contact"/>
   </main>
 </template>
@@ -16,7 +16,7 @@ import AboutSection from "../components/AboutSection.vue";
 import ProductSection from "../components/ProductSection.vue";
 import PartnerSection from "@/components/PartnerSection.vue";
 import ContactSection from "@/components/ContactSection.vue";
-import OrganizationSection from "@/components/OrganizationSection.vue";
+// import OrganizationSection from "@/components/OrganizationSection.vue";
 export default {
   name: "HomeView",
   components: {
@@ -24,7 +24,7 @@ export default {
     AboutSection,
     ProductSection,
     PartnerSection,
-    OrganizationSection,
+    // OrganizationSection,
     ContactSection,
   },
 };

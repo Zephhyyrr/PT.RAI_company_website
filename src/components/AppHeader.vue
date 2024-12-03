@@ -43,14 +43,14 @@
               </li>
             </ul>
           </li>
-          <li>
+          <!-- <li>
             <router-link
               to="#"
               :class="{ active: isActive('organization') }"
               @click.prevent="scrollTo('organization')"
               >Organization</router-link
             >
-          </li>
+          </li> -->
           <li>
             <router-link
               to="#"
@@ -121,7 +121,7 @@ export default {
       }
     },
     handleScroll() {
-      const sections = ["home", "about", "product", "organization", "contact"];
+      const sections = ["home", "about", "product", "contact"];
 
       if (window.scrollY === 0) {
         this.activeSection = "home";
